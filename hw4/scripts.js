@@ -1,13 +1,13 @@
 let newArr = ["History"];  
 let result;
+const resultSum = (a, b) => a + b;
+const resultDiff = (a, b) => a - b;
+const resultMult = (a, b) => a * b;
+const resultDiv = (a, b) => a / b;
 do {
   const operation  = prompt("Какую операцию нужно выполнить? \n  + \n  - \n * \n / \n sin \n history", "history");
   let firstNumber;
   let secondNumber;
-  const resultSum = (a, b) => a + b;
-  const resultDiff = (a, b) => a - b;
-  const resultMult = (a, b) => a * b;
-  const resultDiv = (a, b) => a / b;
   if (operation === "+" || operation === "-" || operation === "*" || operation === "/"){
       do{
           firstNumber = +prompt("Введите, пожалуйста, первое число", "Number"); 
