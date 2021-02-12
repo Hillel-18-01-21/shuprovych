@@ -1,15 +1,15 @@
 alert("Hello");
-let arrLenght =[];
-let mamyNambers = "";
+let arraySort =[];
+let quantityNambers = "";
 do{
-  mamyNambers = +prompt("how many numbers do you want to sort?");
-} while (mamyNambers < 3);
-for(let i = 1; i <= mamyNambers; i++){
+  quantityNambers = +prompt("how many numbers do you want to sort?");
+} while (quantityNambers < 3);
+for(let i = 1; i <= quantityNambers; i++){
   let namber = +prompt("Please push namber");
-  arrLenght.push(namber);
+  arraySort.push(namber);
 };
-arraySort(arrLenght);
-function arraySort(arr)      
+functionSort(arraySort);
+function functionSort(arr)      
 {                               
     let n = arr.length;
     for (let i = 0; i < n; i++)
@@ -21,7 +21,7 @@ function arraySort(arr)
     return arr; 
 };
 
-    console.log(arrLenght);  
+    console.log(arraySort);  
 
 
 
