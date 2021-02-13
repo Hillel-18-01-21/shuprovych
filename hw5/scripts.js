@@ -1,6 +1,6 @@
 alert("Hello");
 let arrayNambers =[];
-let quantity = "";
+let quantity;
 do{
   quantity = +prompt("how many numbers do you want to sort?");
 } while (quantity < 3);
