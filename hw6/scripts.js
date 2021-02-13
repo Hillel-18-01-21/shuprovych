@@ -1,9 +1,7 @@
 alert("Hello");
-
 const nambers = prompt("Enter numbers separated by commas", "1,2,...").split(','); //делим стороку по "," и перобразуем в масив  
 let nambersArray = nambers.map(Number);; // создаем и преобразуем в масив чисел
 
-function repeat(){
 const choiceAction = prompt(`
 Select and enter the operation number
   1. Sort ascending
@@ -35,10 +33,9 @@ switch(choiceAction) {
     break
 };
 console.log(nambersArray);
-};
 
  if (confirm('Do you wont repeat')){
    if (confirm(`do you want to repeat with the same numbers?`)){
-      repeat();    
+     //туплу.....  
    };
  };
