@@ -1,13 +1,18 @@
 let newArr = ["History"];  
-let result;
+let result, secondNumber, firstNumber;
 const resultSum = (a, b) => a + b;
 const resultDiff = (a, b) => a - b;
 const resultMult = (a, b) => a * b;
 const resultDiv = (a, b) => a / b;
+function historyResult () {
+  let historyRes ="";
+  for(let i =0; i < newArr.length; i = i + 1) {
+    historyRes += (newArr[i])
+  };
+  alert(historyRes);
+};
 do {
   const operation  = prompt("Какую операцию нужно выполнить? \n  + \n  - \n * \n / \n sin \n history", "history");
-  let firstNumber;
-  let secondNumber;
   if (operation === "+" || operation === "-" || operation === "*" || operation === "/"){
       do{
           firstNumber = +prompt("Введите, пожалуйста, первое число", "Number"); 
@@ -20,11 +25,7 @@ do {
        firstNumber = +prompt("Введите, пожалуйста, число", "Number"); 
       } while(firstNumber !== firstNumber);
   } else if (operation === "history"){
-      let historyRes ="";
-      for(let i =0; i < newArr.length; i = i + 1) {
-        historyRes += (newArr[i])
-      };
-      alert(historyRes);
+    historyResult ()
   }else {
     alert('select one of the operands')
   };
