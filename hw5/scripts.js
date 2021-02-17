@@ -4,7 +4,7 @@ let quantity;
 do{
   quantity = +prompt("how many numbers do you want to sort?");
 } while (quantity < 3);
-for(let i = 1; i <= quantity; i++){
+for(let i = 0; i < quantity; i++){
   let namber = +prompt("Please push namber");
   arrayNambers.push(namber);
 };
