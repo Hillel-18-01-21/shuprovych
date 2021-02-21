@@ -8,7 +8,7 @@ function showResult() {
     (getResult(result))
   while (confirm('Do you wont repeat')){
     if (confirm(`do you want to repeat with the same numbers?`)){
-       (getResult(result));
+      (getResult(result));
     }else {
       getNumber();
       (getResult(result));
@@ -44,7 +44,6 @@ switch(choiceAction) {
     break 
   case '4':
     result = nambersArray.reduce ((a, b) => Math.max(a, b));
-    ;
     break
   case '5':
     result = nambersArray.reduce((a, b) => Math.min(a, b));
