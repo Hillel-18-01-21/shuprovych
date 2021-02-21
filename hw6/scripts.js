@@ -5,13 +5,13 @@ showResult()
 
 function showResult() {
   let result = (getNumber());
-  console.log(getResult(result))
+    (getResult(result))
   while (confirm('Do you wont repeat')){
     if (confirm(`do you want to repeat with the same numbers?`)){
-      console.log (getResult(result));
+       (getResult(result));
     }else {
       getNumber();
-      console.log (getResult(result))
+      (getResult(result));
     };
   };
 };
@@ -40,18 +40,18 @@ switch(choiceAction) {
     break
   case '3':
     let unionSymbol = prompt('Enter union symbol','');
-    result = nambersArray.join(`${unionSymbol}`);
+    result = nambersArray.join(unionSymbol);
     break 
   case '4':
-    result = nambersArray.reduce(function(a, b) {
-    return Math.max(a, b);
-    });
+    result = nambersArray.reduce ((a, b) => Math.max(a, b));
+    ;
     break
   case '5':
-    result = nambersArray.reduce(function(a, b) {
-    return Math.min(a, b);
-    });
+    result = nambersArray.reduce((a, b) => Math.min(a, b));
     break
+    default:
+    getResult();
 };
- return result;
+console.log (result);
+ 
 };
