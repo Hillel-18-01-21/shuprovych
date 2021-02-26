@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figure</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" async></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <select name="form" class="form">
-       <option value="square" class="form_square">square</option>
-       <option value="circle" class="form_circle">circle</option>
-       <option value="rectangle" class="form_rectangle">rectangle</option>
+   <select id="form">
+       <option value="square" id="square" selected>square</option>
+       <option value="circle" id="circle">circle</option>
+       <option value="rectangle" id="rectangle">rectangle</option>
    </select>
-   <input type="color" name="color" class="color">
-   <div class="figure"></div>
+   <input type="color" id="color">
+   <div class="figure square" id="figure"></div>
 </body>
 </html>

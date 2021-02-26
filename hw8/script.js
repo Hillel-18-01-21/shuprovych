@@ -1,19 +1,23 @@
-const formSelectEl = document.querySelector (".form");
-const colorInputEl = document.querySelector ('.color');
-const createdFigure = document.querySelector ('.figure');
+const formSelectEl = document.getElementById ('form');
+const colorInputEl = document.getElementById ('color');
+const createdFigure = document.getElementById ('figure');
 
 
-// createdFigure.addEventListener('change', e => {
-//     switch () {
-//         case 'receivedForm'
-//     }
-// })
-colorInputEl.addEventListener ('change', e => {
-    createdFigure.style.backgroundColor = e.target.value;
-});
-formSelectEl.addEventListener ('change', e => {
-    switch (formSelectEl){
-        case('')
-    }
-    // createdFigure.classList.add = e.target.value;
-});
+colorInputEl.addEventListener('change', onColorChange);
+formSelectEl.addEventListener('change', onShapeChange)
+
+function onColorChange (){
+    setColor(colorInputEl.value);
+ };
+
+ function onShapeChange (){
+   setForm(formSelectEl.value);
+};
+
+ function setColor (color){
+    createdFigure.style.backgroundColor = color;
+ };
+
+ function setForm (figure) {
+   createdFigure.className = `figure ${figure}`
+ };
