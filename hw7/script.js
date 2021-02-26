@@ -1,5 +1,17 @@
-const addBtn = document.getElementsByClassName('btn_el');
-const addInp = document.getElementsByClassName('inp_el');
-const addList = document.getElementsByClassName('li_el');
 
-addBtn.addEventListener('click', addElement);
+const inputEl = document.getElementById('task-input');
+const btnEl = document.getElementById('task-add-btn');
+const liEl = document.getElementById('task-list');
+
+btnEl.addEventListener('click', onTaskCreate);
+liEl.addEventListener('click', onLiClick);
+
+function onTaskCreate() {
+    const taskEl = document.createElement('li');
+    taskEl.innerHTML = `${inputEl.value}`;
+    liEl.append(taskEl);
+    inputEl.value = '';
+};
+function onLiClick(e){
+    e.target.classList.add('delEl');
+}
