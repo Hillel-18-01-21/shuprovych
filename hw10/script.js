@@ -1,10 +1,10 @@
 function calc(initVal) {
     return { 
-    add: (b) => initVal = b + initVal,
-    sub: (b) => initVal = initVal - b,
-    div: (b) => initVal = initVal / b,
-    mult: (b) => initVal = b * initVal,
-    getResult:() => initVal
+        add: (b) => initVal = b + initVal,
+        sub: (b) => initVal = initVal - b,
+        div: (b) => initVal = initVal / b,
+        mult: (b) => initVal = b * initVal,
+        getResult:() => initVal
     }
 };
 const first = calc(4);
