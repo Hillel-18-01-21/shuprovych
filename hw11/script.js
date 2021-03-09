@@ -6,17 +6,15 @@ const spanTempleteSecondEl = document.getElementById('templateSecond').innerHTML
 const spanTempleteThirdEl = document.getElementById('templateThird').innerHTML;
 
 pushResultFirst.addEventListener('click', pushResult);
-pushResultSecond.addEventListener('click' )
-pushResultThird.addEventListener('click' )
+// pushResultSecond.addEventListener('click' )
+// pushResultThird.addEventListener('click' )
 
 function pushResult (){
     let prev = 0;
-    return function fib (n) {
-        let next = 1;
-        for(let i = 0; i < n; i++){
-          next = prev + next;
-          prev = next - prev;
-        }
+    let next = 1;
+    return function fib () {
+        next = prev + next;
+        prev = next - prev;
         return spanTempleteFirstEl.replace(`{{result}}`, prev);
-    }
+    };
 };
