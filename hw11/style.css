@@ -1,0 +1,7 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+.wrapEl{
+    margin-top: 10px;
+}
