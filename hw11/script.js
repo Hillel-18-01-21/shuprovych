@@ -1,20 +1,21 @@
 const pushResultFirst = document.getElementById('buttFirst');
 const pushResultSecond = document.getElementById('buttSecond');
 const pushResultThird = document.getElementById('buttThird');
-const spanTempleteFirstEl = document.getElementById('templateFirst').innerHTML;
-const spanTempleteSecondEl = document.getElementById('templateSecond').innerHTML;
-const spanTempleteThirdEl = document.getElementById('templateThird').innerHTML;
+const spanTempleteFirstEl = document.getElementById('templateFirst');
+const spanTempleteSecondEl = document.getElementById('templateSecond');
+const spanTempleteThirdEl = document.getElementById('templateThird');
 
-pushResultFirst.addEventListener('click', pushResult);
-// pushResultSecond.addEventListener('click' )
-// pushResultThird.addEventListener('click' )
+pushResultFirst.addEventListener('click', pushResult(spanTempleteFirstEl));
+pushResultSecond.addEventListener('click',pushResult(spanTempleteSecondEl) )
+pushResultThird.addEventListener('click',pushResult(spanTempleteThirdEl) )
 
-function pushResult (){
+function pushResult (target){
     let prev = 0;
     let next = 1;
     return function fib () {
         next = prev + next;
         prev = next - prev;
-        return spanTempleteFirstEl.replace(`{{result}}`, prev);
+        let result = target.textContent  = `Fibonacci number: ${prev}`
+        return result;
     };
 };
