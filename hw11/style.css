@@ -1,0 +1,9 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+.wrapEl{
+    margin-top: 10px;
+    padding: 5px;
+    border: steelblue 2px dashed;
+    width: 500px;
