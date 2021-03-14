@@ -32,12 +32,12 @@ function getAvgMark() {
   for (let i = 0; i < this.marks.length; i++) {
     sum += this.marks[i];
   }
-  let result = `Средняя оценка: ${sum / this.marks.length}`;
+  let result = sum / this.marks.length;
   return result;
 } // средняя оценка студента
 
 function getMaxMark() {
-  let result = `Максимальная оценка: ${Math.max(...this.marks)}`;
+  let result = Math.max(...this.marks);
   return result;
 } // максимальна оценка студента
 
@@ -48,19 +48,19 @@ function setAttend() {
 function getInfo() {
   return `
   Имя: ${this.name};
-  ${this.avgMark()};
+  Средняя оценка: ${this.avgMark()};
   Посещения: ${this.attends};
 `;
 } // возвращаем строку с именем студента, средней оценкой и колличеством посещений
 
 console.log("-------------------------------");
 students.map((e) => {
-  console.log(e.avgMark());
+  console.log(`Средняя оценка: ${e.avgMark()}`);
 });
 
 console.log("-------------------------------");
 students.map((e) => {
-  console.log(e.maxMark());
+  console.log(`Максимальная оценка: ${e.maxMark()}`);
 });
 
 console.log("-------------Посещения------------------");
