@@ -1,0 +1,48 @@
+#formEl{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.input-style {
+    width: 250px;
+    margin-top: 5px;
+    padding: 2px 3px 2px 3px;
+    border: rgb(80, 80, 80) solid 4px;
+    border-radius: 5%;
+}
+.button-style{
+    margin-top: 5px;
+    border: rgb(80, 80, 80) solid 4px;
+}
+.header{
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+}
+.message-style{
+    width: 250px;
+    border: brown solid 6px;
+    text-align: center;
+    background-color: rgb(224, 199, 199);
+}
+.complite {
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 90px;
+    border: chartreuse solid 10px;
+    background-color: rgb(157, 238, 178);
+}
+#main_container {
+    display: flex;
+    justify-content: center;
+}
