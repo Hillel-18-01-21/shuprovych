@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./slyle.css" />
+    <script src="./Login/login.js" defer></script>
+    <script src="./User/UserListComponent.js" defer></script>
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Hello user</h1>
+    </header>
+
+    <main id="content" class="content"></main>
+
+    <script id="login-template" type="text/template">
+      <div class="container">
+          <h2>sign in</h2>
+          <div id="message" class="hide message-style">
+              {{message}}
+          </div>
+          <form id="login-form">
+              <input type="Email" id="email-input" class="input-style" placeholder="email">
+              <input type="Password" id="pass-input" class="input-style" placeholder="password">
+              <button type="submit" class="button-style">SEND</button>
+          </form>
+      </div>
+    </script>
+    <script id="user-list-template" type="text/template">
+        <div-user class="users-styles"><div-user/>
+    </script>
+    <script id="user-item-template" type="text/template">
+      <div id="user_container" class="user_container-style">
+          <div id="user_component" class="user_component-style">
+              <img src="{{avatar}}" alt="userAvatar">
+              <p>Name: {{name}}</p>
+              <p>Surname: {{surname}}</p>
+              <p>Email: {{email}}</p>
+          </div>
+      </div>
+    </script>
+  </body>
+</html>
