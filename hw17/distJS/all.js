@@ -97,17 +97,6 @@ var LoginComponent = /*#__PURE__*/function () {
 }();
 "use strict";
 
-var contentEl = document.getElementById("content");
-var loginComponent = new LoginComponent(document.getElementById("login-template").innerText, contentEl);
-loginComponent.init();
-var userComponent = new UserComponent(document.getElementById("user-list-template").innerText, document.getElementById("user-item-template").innerText, contentEl);
-
-function onSuccessLogin() {
-  loginComponent.dispose();
-  userComponent.init();
-}
-"use strict";
-
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -177,3 +166,14 @@ var UserComponent = /*#__PURE__*/function () {
 }();
 
 ;
+"use strict";
+
+var contentEl = document.getElementById("content");
+var loginComponent = new LoginComponent(document.getElementById("login-template").innerText, contentEl);
+loginComponent.init();
+var userComponent = new UserComponent(document.getElementById("user-list-template").innerText, document.getElementById("user-item-template").innerText, contentEl);
+
+function onSuccessLogin() {
+  loginComponent.dispose();
+  userComponent.init();
+}
