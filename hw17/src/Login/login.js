@@ -8,7 +8,7 @@ class LoginComponent {
     this.template = template;
     this.containerEl = containerEl;
   }
-
+  
   init() {
     this.containerEl.innerHTML = this.template.replace(
       "{{message}}",
@@ -32,7 +32,6 @@ class LoginComponent {
   onLogin() {
     onSuccessLogin();
   }
-
   resetDefault(evt) {
     evt.preventDefault();
   }

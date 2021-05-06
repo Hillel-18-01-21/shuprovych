@@ -1,0 +1,55 @@
+#formEl {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-style {
+  width: 250px;
+  margin-top: 5px;
+  padding: 2px 3px 2px 3px;
+  border: rgb(80, 80, 80) solid 4px;
+  border-radius: 5%;
+}
+.button-style {
+  margin-top: 5px;
+  border: rgb(80, 80, 80) solid 4px;
+}
+.header {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+.veiw {
+  display: block;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+.message-style {
+  width: 250px;
+  border: brown solid 6px;
+  text-align: center;
+  background-color: rgb(224, 199, 199);
+}
+.users-styles {
+  display: flex;
+  justify-content:space-around;
+}
+.user_component-style {
+  width: 160px;
+  border-radius: 5px;
+  background-color: rgb(152, 180, 233);
+  border: cornflowerblue 5px solid;
+  padding: 5px;
+  text-align: center;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
